@@ -1,0 +1,18 @@
+#Python code from youtube video, channel - Siraj Raval
+
+from scikit import tree
+
+# size, weight, shoe size
+x = [[183,75,42],[170,60,38],[160,55,36],[180,80,45],[160,58,38],[178,68,43],
+ [159,60,40]]
+# classes
+y = ['male','female','female','male','female','male','female']
+
+#classifier
+clf = tree.DecisionTreeClassifier()
+
+clf = clf.fit(x,y)
+
+prediction = clf.predict([[190,75,42]])
+
+print(prediction)
